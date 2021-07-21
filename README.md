@@ -1,1 +1,11 @@
-# snippets
+##CODE CREATED AND USED IN DIFFERENT PROJECTS##
+
+css
+
+JS
+
+ruby
+
+rails
+
+C# 
