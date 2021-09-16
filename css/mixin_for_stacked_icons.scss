@@ -1,0 +1,30 @@
+// stacked icons :
+@mixin stacked-icons($full-size, $larger-icon-size, $encased-icon-size) {
+    height: $full-size;
+    width: $full-size;
+
+    .larger-icon.fa-stack-2x {
+        height: $larger-icon-size;
+        width: $larger-icon-size;
+
+        &.full-size {
+            height: $full-size;
+            width: $full-size;
+        }
+    }
+
+    .encased-icon.fa-stack-1x {
+        height: $encased-icon-size;
+        width: $encased-icon-size;
+
+        &.half-size {
+            height: $full-size /2;
+            width: $full-size /2;
+
+            &.bottom-right-corner {
+                right: -55%;
+                bottom: -30%;
+            }
+        }
+    }
+}
