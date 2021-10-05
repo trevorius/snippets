@@ -1,0 +1,16 @@
+<iframe name="dummyframe" id="dummyframe" style="display: none;"></iframe>
+<form asp-action="SetInterviewStatus" target="dummyframe">
+    <div class="d-flex flex-column">
+        <input type="hidden" asp-for="Id" />
+        <div class="py-2 pr-2">
+            <label>@SharedLocalizer["Interview done? "]</label>
+            <input type="checkbox" asp-for="InterviewDone" />
+        </div>
+
+        <textarea class="p-2" rows="4" asp-for="Notes"></textarea>
+    </div>
+
+
+
+    <partial name="/Views/Shared/Partials/Modal/_CloseAndSave.cshtml" />
+</form> 
